@@ -1,0 +1,103 @@
+.score-view {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height: 150px;
+    padding-top: 15px;
+    
+}
+
+.score-view-container {
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width:100%;
+    height:100%;
+    background-color: var(--main-background-color);
+    padding:10px 0 0;
+
+}
+
+.score-view-title {
+    color:#fff;
+    font-size:1.6rem;
+}
+
+.score-view-row1{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height:40%;
+    background-color: var(--primary-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-view-row1-highest{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height:40%;
+    background-color: var(--secondary-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.score-view-row2{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height:60%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#1f406b ;
+}
+
+.score-view-row2-highest{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height:60%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#b92f76 ;
+}
+
+
+
+.score-view-col{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score-view-name {
+    color:#000;
+    font-size:1.3rem;
+}
+
+.score-view-value {
+    color:#fff;
+    font-size:1.6rem;
+}
+
+.highest-score {
+    border: 2px solid gold; /* Special border for the highest score */
+    font-weight: bold; /* Make the text bold */
+    /* Add any other styles you want for the highest score */
+    background-color: red;
+
+}
+
+
+

@@ -1,0 +1,43 @@
+.difficulty-view {
+    top:var(--navbar-container-height);
+    position: absolute; 
+    display: flex;
+    width:100%;
+    height: calc(100% - var(--navbar-container-height));
+    /*background-color: var(--main-background-color);*/
+    
+}
+
+.difficulty-view-container {
+    left:100%;
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width:100%;
+    height:100%;
+    background-color: #2E578B;
+
+} 
+
+.difficulty-logo1{
+    width:250px;
+    height:313px;
+    background-image: url('../../images/difficulty-logo1.png');
+}
+
+.difficulty-logo2{
+    width:250px;
+    height:313px;
+    background-image: url('../../images/difficulty-logo2.png');
+    display:none;
+}
+
+.difficulty-logo3{
+    width:250px;
+    height:313px;
+    background-image: url('../../images/difficulty-logo3.png');
+    display:none;
+}

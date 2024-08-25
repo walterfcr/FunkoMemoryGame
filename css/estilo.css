@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body { 
+        font-family: "Bebas Neue", sans-serif;
+        font-size:1.5rem;
+        letter-spacing: 0.2rem;
+}
+
+:root {
+    --main-background-color: #2E578B;
+    --primary-color:#072b5b;
+    --secondary-color:#B2025D;
+    --complementary-color:#8a7580;
+    --navbar-container-height: 70px;
+    --button-color: #fff;
+    --button-background-color: var(--secondary-color);
+    --play-view-hub-height: 60px;
+}
+
+.mainContainer{
+    width:100vw;
+    height:100vh;
+    background-color: var(--main-background-color);
+    overflow: hidden;
+}
+
+.navbarContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--navbar-container-height);
+    width:100%;
+    background-color: var(--primary-color);
+}
+
+
+.navbarContainer-back-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:calc(var(--navbar-container-height) - 30px);
+    height:calc(var(--navbar-container-height) - 30px);
+    color: var(--button-color);
+    position: fixed;
+    left:10px;
+    font-size:3rem ;
+    padding:5px 5px 0 0;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--button-background-color);
+}
+
+.navbarContainer-title{
+    color: var(--button-color);
+    font-size: 30px;
+}
+
+.contentContainer {
+    height: calc(100% - var(--navbar-container-height));
+    width: 100%;
+    background-color: var(--main-background-color);
+} 
+
+.fade {
+    position:fixed;
+    width:100%;
+    height:100%;
+    opacity:0;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+    height:50px;
+    width:50%;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.button:hover{
+
+    background-color:#b71769;
+
+}
+
+
+.hidden {
+    display:none;
+}
+
+.play-view-resetBtn {
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--navbar-container-height) - 30px);
+    height: calc(var(--navbar-container-height) - 30px);
+    color: var(--primary-color);
+    cursor:pointer;
+    border-radius:50%;
+    background-image: url('./images/reset.png'); /* Adjust path if necessary */
+    background-size: cover; /* Ensure the image covers the button area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-color: var(--secondary-color);
+}
+
+.play-view-resetBtn:hover {
+
+    background-color:#b71769;
+}
+
+/*.backBtn-icon{
+    background-image: url('images/reset.png');
+}*/
+
+
+@media (min-width: 320px) and (max-width: 420px) {
+
+
+    body {
+        font-size:1rem;
+    }
+
+}
+
+@media (min-width: 421px) and (max-width: 480px) {
+
+
+    body {
+        font-size:1.1rem;
+    }
+
+}

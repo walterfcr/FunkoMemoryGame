@@ -1,0 +1,27 @@
+.localization-view {
+    top:var(--navbar-container-height);
+    position: absolute; 
+    display: flex;
+    width:100%;
+    height: calc(100% - var(--navbar-container-height));
+    /*background-color: var(--main-background-color);*/
+}
+
+.localization-view-container {
+    left:100%;
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width:100%;
+    height:100%;
+    background-color: var(--main-background-color);
+}
+
+.localization-view-logo{
+    width:250px;
+    height:313px;
+    background-image: url('../../images/language-logo.png');
+}
