@@ -21,7 +21,8 @@ export class PlayService extends Service{
         }
 
 
-        let url = `https://funko-memory-game-be.vercel.app`;
+        let url = `https://funko-memory-game-be.vercel.app/cards/${difficulty}/${theme}`;
+        //let url = `https://localhost:3000/cards/${difficulty}/${theme}`;
 
 
         let request = new XMLHttpRequest();
@@ -36,8 +37,8 @@ export class PlayService extends Service{
     }
 
     sendScore(score) {
-        //let url = `https://walter-memory-game-be.vercel.app/score`;
         let url = `https://funko-memory-game-be.vercel.app/score`;
+        //let url = `https://localhost:3000/score`;
 
         let request = new XMLHttpRequest();
         request.open('POST', url);
